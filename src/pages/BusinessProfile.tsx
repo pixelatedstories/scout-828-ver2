@@ -84,7 +84,7 @@ export default function BusinessProfile() {
             </Link>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <span className="bg-brand-accent text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
+                <span className="bg-brand-accent text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5">
                   Featured on Scout 828
                 </span>
                 <span className="text-white/70 text-[10px] font-bold uppercase tracking-widest">
@@ -122,7 +122,7 @@ export default function BusinessProfile() {
             </section>
 
             {/* Day in the Life */}
-            <section className="bg-white border border-slate-200 p-12 md:p-16 rounded-3xl space-y-12">
+            <section className="bg-white border border-slate-200 p-12 md:p-16 space-y-12">
               <div className="space-y-2">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-brand-accent">Insider List</span>
                 <h2 className="text-4xl font-display font-bold text-brand-navy">Day in the Life</h2>
@@ -191,16 +191,16 @@ export default function BusinessProfile() {
               <div className="space-y-4">
                 <h4 className="text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-1">Share This Story</h4>
                 <div className="flex space-x-4">
-                  <button onClick={handleShare} className="p-3 bg-slate-50 text-brand-navy hover:bg-brand-accent hover:text-white transition-all rounded-full">
+                  <button onClick={handleShare} className="p-3 bg-slate-50 text-brand-navy hover:bg-brand-accent hover:text-white transition-all">
                     <Share2 size={18} />
                   </button>
-                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-blue-600 hover:text-white transition-all rounded-full">
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-blue-600 hover:text-white transition-all">
                     <Facebook size={18} />
                   </a>
-                  <a href={`https://twitter.com/intent/tweet?url=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-sky-500 hover:text-white transition-all rounded-full">
+                  <a href={`https://twitter.com/intent/tweet?url=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-sky-500 hover:text-white transition-all">
                     <Twitter size={18} />
                   </a>
-                  <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-blue-700 hover:text-white transition-all rounded-full">
+                  <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-brand-navy hover:bg-blue-700 hover:text-white transition-all">
                     <Linkedin size={18} />
                   </a>
                 </div>
@@ -227,7 +227,7 @@ export default function BusinessProfile() {
               <Link
                 key={biz.id}
                 to={`/${biz.category}/${biz.slug}`}
-                className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
+                className="group bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img

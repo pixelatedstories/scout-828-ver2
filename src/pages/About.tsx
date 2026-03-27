@@ -32,7 +32,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-slate-50 p-12 rounded-3xl space-y-6">
+          <div className="bg-slate-50 p-12 space-y-6">
             <h2 className="text-3xl font-display font-bold text-brand-navy">Who's Behind This?</h2>
             <p className="text-lg text-slate-600 font-serif italic leading-relaxed">
               Scout 828 is produced by <a href="https://pixelatedstories.net" target="_blank" rel="noopener noreferrer" className="text-brand-navy border-b-2 border-brand-accent hover:text-brand-accent transition-colors">Pixelated Stories Digital Marketing</a>, an Asheville-based agency that helps local businesses get found online.

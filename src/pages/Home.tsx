@@ -12,8 +12,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-10">
-              <div className="inline-flex items-center space-x-2 bg-brand-accent/10 px-4 py-2 rounded-none">
-                <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span>
+              <div className="inline-flex items-center space-x-2 bg-brand-accent/10 px-4 py-2">
+                <span className="w-2 h-2 bg-brand-accent animate-pulse"></span>
                 <span className="text-[10px] font-bold uppercase tracking-widest text-brand-navy">Now Scouting Asheville & WNC</span>
               </div>
               <h1 className="text-6xl md:text-[100px] font-display font-bold leading-[0.85] tracking-tighter text-brand-navy">
@@ -39,7 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-5 relative">
-              <div className="aspect-[4/5] rounded-none overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] relative z-10">
+              <div className="aspect-[4/5] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] relative z-10">
                 <img
                   src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1000"
                   alt="Asheville Vibe"
@@ -86,7 +86,7 @@ export default function Home() {
               <Link
                 key={cat.id}
                 to={`/${cat.slug}`}
-                className={`group relative overflow-hidden rounded-none bg-brand-navy flex flex-col justify-end p-8 transition-all duration-500 hover:shadow-2xl ${gridClasses[index] || ""}`}
+                className={`group relative overflow-hidden bg-brand-navy flex flex-col justify-end p-8 transition-all duration-500 hover:shadow-2xl ${gridClasses[index] || ""}`}
               >
                 <img 
                   src={bgImages[index] || bgImages[0]} 
@@ -97,7 +97,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/20 to-transparent opacity-80"></div>
                 
                 <div className="relative z-10 space-y-4">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-none flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
                     <Icon size={24} />
                   </div>
                   <div>
@@ -125,7 +125,7 @@ export default function Home() {
               <Link
                 key={biz.id}
                 to={`/${biz.category}/${biz.slug}`}
-                className="group bg-white rounded-none overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
+                className="group bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
                   {biz.photo 
@@ -140,7 +140,7 @@ export default function Home() {
                       </div>
                   }
                   <div className="absolute top-4 left-4">
-                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-none backdrop-blur-sm">
+                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 backdrop-blur-sm">
                       {biz.subcategory}
                     </span>
                   </div>
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-brand-navy rounded-none p-12 md:p-24 text-white relative overflow-hidden shadow-2xl">
+        <div className="bg-brand-navy p-12 md:p-24 text-white relative overflow-hidden shadow-2xl">
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-16">
             <div className="space-y-8 group">
               <div className="text-8xl font-display font-bold text-white/5 group-hover:text-brand-accent/20 transition-colors duration-500">01</div>
@@ -183,13 +183,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 rounded-full -mr-64 -mt-64 blur-[120px]" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-accent/5 rounded-full -ml-32 -mb-32 blur-[100px]" />
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 -mr-64 -mt-64 blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-accent/5 -ml-32 -mb-32 blur-[100px]" />
         </div>
       </section>
 
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white border border-slate-100 p-12 md:p-24 text-center space-y-10 relative rounded-none shadow-2xl shadow-slate-200/50 overflow-hidden">
+        <div className="bg-white border border-slate-100 p-12 md:p-24 text-center space-y-10 relative shadow-2xl shadow-slate-200/50 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-2 bg-brand-accent"></div>
           <div className="space-y-4">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-accent">Stay Informed</span>
@@ -200,9 +200,9 @@ export default function Home() {
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 px-8 py-5 bg-slate-50 border border-slate-100 focus:outline-none focus:border-brand-accent transition-colors text-sm rounded-none"
+              className="flex-1 px-8 py-5 bg-slate-50 border border-slate-100 focus:outline-none focus:border-brand-accent transition-colors text-sm"
             />
-            <button className="bg-brand-navy text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-all rounded-none shadow-lg shadow-brand-navy/20">
+            <button className="bg-brand-navy text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-all shadow-lg shadow-brand-navy/20">
               Join the List
             </button>
           </form>

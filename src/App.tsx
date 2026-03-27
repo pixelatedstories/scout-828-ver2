@@ -26,42 +26,25 @@ function AnimatedRoutes() {
     exit: { opacity: 0, y: -10 }
   };
 
-  const AnyRoutes = Routes as any;
-
   return (
     <AnimatePresence mode="wait">
-      <AnyRoutes location={location} key={location.pathname}>
-        <Route path="/" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <Home />
-          </motion.div>
-        } />
-        <Route path="/about" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <About />
-          </motion.div>
-        } />
-        <Route path="/get-scouted" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <GetScouted />
-          </motion.div>
-        } />
-        <Route path="/:categorySlug" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <CategoryPage />
-          </motion.div>
-        } />
-        <Route path="/:categorySlug/:slug" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <BusinessProfile />
-          </motion.div>
-        } />
-        <Route path="*" element={
-          <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={{ duration: 0.3 }}>
-            <NotFound />
-          </motion.div>
-        } />
-      </AnyRoutes>
+      <motion.div
+        key={location.pathname}
+        variants={pageVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 0.3 }}
+      >
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/get-scouted" element={<GetScouted />} />
+          <Route path="/:categorySlug" element={<CategoryPage />} />
+          <Route path="/:categorySlug/:slug" element={<BusinessProfile />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </motion.div>
     </AnimatePresence>
   );
 }

@@ -44,7 +44,7 @@ export default function NotFound() {
                     {count} {count === 1 ? 'Selection' : 'Selections'}
                   </span>
                 </div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-full -mr-16 -mt-16 group-hover:bg-brand-accent/5 transition-colors" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 -mr-16 -mt-16 group-hover:bg-brand-accent/5 transition-colors" />
               </Link>
             );
           })}

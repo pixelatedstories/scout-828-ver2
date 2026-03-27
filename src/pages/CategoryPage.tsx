@@ -45,7 +45,7 @@ export default function CategoryPage() {
           <div className="flex items-center space-x-2 overflow-x-auto py-4 scrollbar-hide">
             <button
               onClick={() => setActiveSubcategory('All')}
-              className={`whitespace-nowrap px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
+              className={`whitespace-nowrap px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition-all ${
                 activeSubcategory === 'All'
                   ? 'bg-brand-navy text-white'
                   : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
@@ -57,7 +57,7 @@ export default function CategoryPage() {
               <button
                 key={sub}
                 onClick={() => setActiveSubcategory(sub)}
-                className={`whitespace-nowrap px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
+                className={`whitespace-nowrap px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition-all ${
                   activeSubcategory === sub
                     ? 'bg-brand-navy text-white'
                     : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
@@ -78,7 +78,7 @@ export default function CategoryPage() {
               <Link
                 key={biz.id}
                 to={`/${biz.category}/${biz.slug}`}
-                className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
+                className="group bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img
@@ -88,7 +88,7 @@ export default function CategoryPage() {
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-sm">
+                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 backdrop-blur-sm">
                       {biz.subcategory}
                     </span>
                   </div>

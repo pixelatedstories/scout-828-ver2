@@ -85,8 +85,8 @@ export default function GetScouted() {
                   "Your story told by a real person, not an algorithm"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <div className="mt-1 mr-4 w-5 h-5 rounded-full bg-brand-accent/10 flex items-center justify-center flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-brand-accent" />
+                    <div className="mt-1 mr-4 w-5 h-5 bg-brand-accent/10 flex items-center justify-center flex-shrink-0">
+                      <div className="w-2 h-2 bg-brand-accent" />
                     </div>
                     <span className="text-lg text-slate-600 font-serif italic">{item}</span>
                   </li>
@@ -94,7 +94,7 @@ export default function GetScouted() {
               </ul>
             </div>
 
-            <div className="bg-brand-navy p-10 rounded-3xl text-white space-y-6">
+            <div className="bg-brand-navy p-10 text-white space-y-6">
               <h3 className="text-xl font-display font-bold">Join the Community</h3>
               <p className="text-slate-400 font-serif italic">
                 Join 50+ local businesses already featured on Scout 828. We're building the most trusted guide to the mountains.
@@ -103,7 +103,7 @@ export default function GetScouted() {
           </div>
 
           {/* Form */}
-          <div className="bg-white border border-slate-200 p-8 md:p-12 rounded-xl shadow-sm">
+          <div className="bg-white border border-slate-200 p-8 md:p-12 shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
