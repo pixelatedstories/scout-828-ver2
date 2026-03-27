@@ -12,7 +12,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-10">
-              <div className="inline-flex items-center space-x-2 bg-brand-accent/10 px-4 py-2 rounded-full">
+              <div className="inline-flex items-center space-x-2 bg-brand-accent/10 px-4 py-2 rounded-none">
                 <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span>
                 <span className="text-[10px] font-bold uppercase tracking-widest text-brand-navy">Now Scouting Asheville & WNC</span>
               </div>
@@ -39,7 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-5 relative">
-              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] relative z-10">
+              <div className="aspect-[4/5] rounded-none overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] relative z-10">
                 <img
                   src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1000"
                   alt="Asheville Vibe"
@@ -48,31 +48,14 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/40 to-transparent"></div>
               </div>
-              <div className="absolute -bottom-12 -left-12 bg-white p-8 shadow-2xl max-w-[280px] hidden xl:block z-20 border border-slate-100">
-                <Icons.Quote className="text-brand-accent mb-4" size={32} />
-                <p className="font-serif italic text-slate-600 text-xl leading-relaxed">
-                  "The definitive guide for the modern explorer."
-                </p>
-                <div className="mt-4 pt-4 border-t border-slate-100">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-brand-navy">Scout 828 Editorial</span>
-                </div>
-              </div>
-              <div className="absolute -top-10 -right-10 w-64 h-64 bg-brand-accent/10 rounded-full blur-3xl -z-10"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Category Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
-          <div className="space-y-2">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-accent">Curated Collections</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-navy">Browse by Category</h2>
-          </div>
-          <Link to="/about" className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-brand-accent transition-colors border-b border-slate-200 pb-1">
-            View All Archives →
-          </Link>
+      <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-navy">Browse by Category</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
@@ -103,7 +86,7 @@ export default function Home() {
               <Link
                 key={cat.id}
                 to={`/${cat.slug}`}
-                className={`group relative overflow-hidden rounded-2xl bg-brand-navy flex flex-col justify-end p-8 transition-all duration-500 hover:shadow-2xl ${gridClasses[index] || ""}`}
+                className={`group relative overflow-hidden rounded-none bg-brand-navy flex flex-col justify-end p-8 transition-all duration-500 hover:shadow-2xl ${gridClasses[index] || ""}`}
               >
                 <img 
                   src={bgImages[index] || bgImages[0]} 
@@ -114,7 +97,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/20 to-transparent opacity-80"></div>
                 
                 <div className="relative z-10 space-y-4">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-none flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
                     <Icon size={24} />
                   </div>
                   <div>
@@ -142,17 +125,22 @@ export default function Home() {
               <Link
                 key={biz.id}
                 to={`/${biz.category}/${biz.slug}`}
-                className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
+                className="group bg-white rounded-none overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100"
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
-                  <img
-                    src={biz.photo}
-                    alt={biz.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
+                  {biz.photo 
+                    ? <img
+                        src={biz.photo}
+                        alt={biz.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        referrerPolicy="no-referrer"
+                      />
+                    : <div className="w-full h-full bg-slate-100 flex items-center justify-center">
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-slate-300">Photo Coming Soon</span>
+                      </div>
+                  }
                   <div className="absolute top-4 left-4">
-                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-sm">
+                    <span className="bg-brand-navy/90 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-none backdrop-blur-sm">
                       {biz.subcategory}
                     </span>
                   </div>
@@ -170,9 +158,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-brand-navy rounded-[40px] p-12 md:p-24 text-white relative overflow-hidden shadow-2xl">
+        <div className="bg-brand-navy rounded-none p-12 md:p-24 text-white relative overflow-hidden shadow-2xl">
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-16">
             <div className="space-y-8 group">
               <div className="text-8xl font-display font-bold text-white/5 group-hover:text-brand-accent/20 transition-colors duration-500">01</div>
@@ -201,22 +188,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white border border-slate-100 p-12 md:p-24 text-center space-y-10 relative rounded-[40px] shadow-2xl shadow-slate-200/50 overflow-hidden">
+        <div className="bg-white border border-slate-100 p-12 md:p-24 text-center space-y-10 relative rounded-none shadow-2xl shadow-slate-200/50 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-2 bg-brand-accent"></div>
           <div className="space-y-4">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-accent">Stay Informed</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-brand-navy">The Scout 828 Weekly</h2>
-            <p className="text-slate-500 text-xl font-serif italic max-w-2xl mx-auto">Events, stories, and the best of the 828. One curated email delivered every Thursday morning.</p>
+            <p className="text-slate-500 text-xl font-serif italic max-w-2xl mx-auto">Events, stories, and the best of the 828. One email a week.</p>
           </div>
           <form className="flex flex-col md:flex-row gap-4 max-w-xl mx-auto" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 px-8 py-5 bg-slate-50 border border-slate-100 focus:outline-none focus:border-brand-accent transition-colors text-sm rounded-xl"
+              className="flex-1 px-8 py-5 bg-slate-50 border border-slate-100 focus:outline-none focus:border-brand-accent transition-colors text-sm rounded-none"
             />
-            <button className="bg-brand-navy text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-all rounded-xl shadow-lg shadow-brand-navy/20">
+            <button className="bg-brand-navy text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-all rounded-none shadow-lg shadow-brand-navy/20">
               Join the List
             </button>
           </form>

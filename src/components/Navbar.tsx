@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Explore', path: '/' },
+    { name: 'Categories', path: '/#categories' },
     { name: 'About', path: '/about' },
   ];
 
@@ -19,7 +19,7 @@ export default function Navbar() {
               <img 
                 src="/logo-horizontal.png" 
                 alt="Scout 828" 
-                className="h-12 w-auto" 
+                className="h-12 w-auto brightness-0" 
                 referrerPolicy="no-referrer"
               />
             </Link>
