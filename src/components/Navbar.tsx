@@ -19,7 +19,7 @@ export default function Navbar() {
               <img 
                 src="/logo-horizontal.png" 
                 alt="Scout 828" 
-                className="h-12 w-auto brightness-0" 
+                className="h-12 w-auto" 
                 referrerPolicy="no-referrer"
               />
             </Link>
