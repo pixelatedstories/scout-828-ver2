@@ -1,0 +1,158 @@
+{
+  "categories": [
+    {
+      "id": "food-dining",
+      "name": "Food & Dining",
+      "slug": "food-dining",
+      "icon": "Utensils",
+      "intro": "Asheville's food scene is the real deal. From James Beard-nominated chefs to food trucks parked in gas station lots, here are the spots worth knowing about.",
+      "subcategories": ["Restaurants", "Food Trucks", "Breweries & Taprooms", "Coffee & Cafes", "Bakeries"]
+    },
+    {
+      "id": "home-services",
+      "name": "Home Services",
+      "slug": "home-services",
+      "icon": "Wrench",
+      "intro": "Finding a reliable contractor in WNC shouldn't feel like a gamble. These are the home service pros that locals actually trust and recommend.",
+      "subcategories": ["Plumbers", "Painters", "Contractors", "Electricians", "Landscaping", "Cleaning"]
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping & Retail",
+      "slug": "shopping",
+      "icon": "ShoppingBag",
+      "intro": "Skip the chains. Asheville's independent shops are where you'll find things you didn't know you needed and can't find anywhere else.",
+      "subcategories": ["Antiques & Vintage", "Clothing & Boutiques", "Outdoor Gear", "Gift Shops", "Thrift & Consignment"]
+    },
+    {
+      "id": "experiences",
+      "name": "Experiences & Events",
+      "slug": "experiences",
+      "icon": "Compass",
+      "intro": "Beyond the tourist brochure. Real experiences and events worth showing up for in Asheville and the surrounding mountains.",
+      "subcategories": ["Outdoor Adventures", "Tours", "Classes & Workshops", "Live Music & Entertainment"]
+    },
+    {
+      "id": "health-wellness",
+      "name": "Health & Wellness",
+      "slug": "health-wellness",
+      "icon": "Heart",
+      "intro": "Asheville takes wellness seriously. These practitioners and studios are the ones locals keep coming back to.",
+      "subcategories": ["Acupuncture", "Chiropractic", "Yoga & Fitness", "Massage & Bodywork", "Mental Health"]
+    },
+    {
+      "id": "professional-services",
+      "name": "Professional Services",
+      "slug": "professional-services",
+      "icon": "Briefcase",
+      "intro": "The behind-the-scenes professionals keeping Asheville businesses running. Accountants, lawyers, marketers, and more.",
+      "subcategories": ["Accounting & Finance", "Marketing & Design", "Legal", "Real Estate", "Insurance"]
+    }
+  ],
+  "businesses": [
+    {
+      "id": "white-duck-taco",
+      "slug": "white-duck-taco",
+      "name": "White Duck Taco Shop",
+      "owner": "Ben Mixson",
+      "trade": "Restaurant",
+      "category": "food-dining",
+      "subcategory": "Restaurants",
+      "location": "Asheville, NC",
+      "neighborhood": "River Arts District",
+      "phone": "828-258-1660",
+      "website": "https://whiteducktacoshop.com",
+      "photo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=1000",
+      "hook": "What started as a food truck in a gas station parking lot is now an Asheville staple.",
+      "quote": "We never set out to be a restaurant. We just wanted to make tacos people would drive across town for.",
+      "story": "Ben Mixson started White Duck Taco out of a converted bus in a gas station parking lot on the south side of Asheville. No business plan, no investors, just good tacos and word of mouth.\n\nThe lines got long enough that a brick-and-mortar became inevitable. Now there are multiple locations, but the vibe hasn't changed. The menu still rotates based on what's fresh and what sounds fun. You'll find Korean beef tacos next to jerk chicken next to a Thai peanut situation that has no business being that good.\n\nBen still shows up at the River Arts District location most mornings. He's less interested in scaling a brand and more interested in keeping the food worth talking about.",
+      "dayInTheLife": {
+        "coffee": "French Broad Chocolate Lounge. The mocha is dangerous.",
+        "fitness": "Mountain biking at Bent Creek when the weather cooperates.",
+        "newSpot": "Taqueria Muoz on Patton. Legit.",
+        "visitorPick": "River Arts District on a Saturday morning, then lunch at 12 Bones.",
+        "shopLocal": "East Fork Pottery. Support the potters."
+      },
+      "featured": true,
+      "dateAdded": "2026-03-22"
+    },
+    {
+      "id": "blue-ridge-painting",
+      "slug": "blue-ridge-painting",
+      "name": "Blue Ridge Painting Co",
+      "owner": "Jake, Matt & Chris Harmon",
+      "trade": "Residential & Commercial Painting",
+      "category": "home-services",
+      "subcategory": "Painters",
+      "location": "Asheville, NC",
+      "neighborhood": "North Asheville",
+      "phone": "828-888-0750",
+      "website": "https://blueridgepaintingco.com",
+      "photo": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=1000",
+      "hook": "Three brothers who left corporate jobs to paint houses and haven't looked back.",
+      "quote": "People think painting is simple. It is. But doing it right, on time, and without ghosting the client? That's where most guys fall apart.",
+      "story": "Jake, Matt, and Chris Harmon were all working desk jobs in Charlotte when their dad had a health scare in 2019. They moved back to Asheville to be closer to family and needed something to do.\n\nJake had painted houses in college. Matt could estimate and run numbers. Chris could sell. They pooled $5,000 and bought brushes, ladders, and a trailer. Blue Ridge Painting Co was born out of a garage in North Asheville.\n\nFour years later, they run a crew of eight. Their reputation is built on one thing: they show up when they say they will. In an industry where ghosting is the norm, that alone has been enough to keep the phone ringing.",
+      "dayInTheLife": {
+        "coffee": "High Five Coffee on Rankin.",
+        "fitness": "CrossFit Pisgah, all three of us.",
+        "newSpot": "Forestry Camp, the new spot off Brevard Rd.",
+        "visitorPick": "Sunset from Bearwallow Mountain. Easy hike, incredible view.",
+        "shopLocal": "Diamond Brand Outdoors for anything camping."
+      },
+      "featured": true,
+      "dateAdded": "2026-03-22"
+    },
+    {
+      "id": "second-gear",
+      "slug": "second-gear",
+      "name": "Second Gear",
+      "owner": "Sarah Chen",
+      "trade": "Consignment Outdoor Gear",
+      "category": "shopping",
+      "subcategory": "Outdoor Gear",
+      "location": "Asheville, NC",
+      "neighborhood": "West Asheville",
+      "phone": "828-888-0750",
+      "website": "https://secondgearwnc.com",
+      "photo": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=1000",
+      "hook": "Consignment outdoor gear for people who'd rather spend money on the trail than in the store.",
+      "quote": "Everyone in Asheville has a garage full of gear they used twice. We give that gear a second life.",
+      "story": "Sarah Chen moved to Asheville for the mountains. She was spending her weekends on trails and her weekday paychecks at REI. When she noticed how many barely-used jackets, packs, and boots were collecting dust in friends' closets, the idea clicked.\n\nSecond Gear is a consignment shop on Haywood Road that buys and sells used outdoor gear. Patagonia jackets, hiking boots, climbing harnesses, camp stoves. If it belongs on a trail, it's probably on the rack.\n\nThe shop has become a hangout as much as a store. Trail runners swap route tips by the register. Weekend warriors try on packs. Sarah hosts free gear repair clinics on the first Saturday of every month.",
+      "dayInTheLife": {
+        "coffee": "Odd's Cafe on Haywood. Their chai is the move.",
+        "fitness": "Trail running. Bent Creek or DuPont, depending on mood.",
+        "newSpot": "Ginger's Revenge ginger beer. Not a brewery, but better.",
+        "visitorPick": "Max Patch at sunrise. Get there early or don't bother.",
+        "shopLocal": "Harvest Records for vinyl. Still the best record shop in WNC."
+      },
+      "featured": true,
+      "dateAdded": "2026-03-22"
+    },
+    {
+      "id": "old-europe-pastries",
+      "slug": "old-europe-pastries",
+      "name": "Old Europe Pastries",
+      "owner": "Abigail Moore",
+      "trade": "European Bakery & Pastries",
+      "category": "food-dining",
+      "subcategory": "Bakeries",
+      "location": "Asheville, NC",
+      "neighborhood": "Downtown",
+      "phone": "(828) 255-5999",
+      "website": "https://oldeuropepastries.com",
+      "photo": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1000",
+      "hook": "They almost closed in 2021. Now they run two kitchens until 10 PM.",
+      "quote": "If we didn't find a new location, there would be no more Old Europe.",
+      "story": "Old Europe Pastries has been making downtown Asheville a little sweeter since 1994, when founder Melinda Vetro brought Hungarian baking techniques she'd learned in eighth grade to a city that had nothing quite like it. Thirty years and five locations later, the shop finally has a permanent home at 18 Broadway Street. Abigail Moore has been part of that story for eight of those years, first as a baker, now as GM, keeping the European-style cakes and tortes coming out the way Melinda always intended: lighter, less sweet, made the old way.\n\nGetting there almost didn't happen. In 2021, in the middle of COVID, they got word they needed to find a new location or close for good. Abigail worked alongside Melinda through the property acquisition, the construction, and keeping the original location running at the same time. That's the version of determination most people never see from the outside of a pastry case.\n\nNow they're running two full kitchens with 10 bakers working 7:30 AM to 10 PM. Ninety-five percent of what's in the case is made in-house, and no cake sits there longer than three days from baked layers to display. The hazelnut Napoleon is the bestseller, but the tiramisu, eclairs, and macarons move fast too. Thirty years of doing it right tends to have that effect.",
+      "dayInTheLife": {
+        "coffee": "Jersey South for bagels, her favorite thing in the world, and Crust Never Sleeps — a two-person bakery that opens two days a week and sells out every time.",
+        "fitness": "Weight training at home five days a week at 6 AM, hiking with two big dogs, and recently picked up jump rope — still working on the spin.",
+        "newSpot": "Smokee's, a wood-fired pizza truck that's expanded into breakfast and brunch.",
+        "visitorPick": "River Arts District to see how everything came back after the hurricane, Wagbar if you have dogs, Ukiah or Luminosa for food.",
+        "shopLocal": "Minx Boutique for clothing, Antique Tobacco Barn, and Needful Things antique mall in Hendersonville."
+      },
+      "featured": true,
+      "dateAdded": "2026-03-26"
+    }
+  ]
+}
